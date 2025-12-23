@@ -1,73 +1,90 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+  <!--=============== REMIXICONS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Christmas website for Merlin</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__logo">Christmas</a>
+  <title>Christmas website for Merlin</title>
+</head>
+<body>
 
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="#home" class="nav__link">Home</a>
-                  </li>
-                  <li class="nav__item">
-                     <a href="#about" class="nav__link">About</a>
-                  </li>
-                  <li class="nav__item">
-                     <a href="#services" class="nav__link">Gifts</a>
-                  </li>
-                  <li class="nav__item">
-                     <a href="#contact" class="nav__link">Share</a>
-                  </li>
-                  <li>
-                     <a href="#" class="nav__link">Contact</a>
-                  </li>
-               </ul>
+<!--==================== HEADER ====================-->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#" class="nav__logo">Christmas</a>
 
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-large-line"></i>
-               </div>
-            </div>
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#gifts" class="nav__link">Gifts</a></li>
+        <li class="nav__item"><a href="#share" class="nav__link">Share</a></li>
+      </ul>
 
-            <div class="nav__toggle" id="nav-toggle">
-               <i class="ri-apps-2-line"></i>
-            </div>
-         </nav>
-      </header>
+      <div class="nav__close" id="nav-close">
+        <i class="ri-close-large-line"></i>
+      </div>
+    </div>
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home">
-            <div class="home__container container">
-               <img src="assets/img/img-bg.svg" alt="image" class="home__bg">
-            </div>
-         </section>
-      </main>
-      
-      <!--=============== GSAP JS ===============-->
-      <script src=""></script>
+    <div class="nav__toggle" id="nav-toggle">
+      <i class="ri-apps-2-line"></i>
+    </div>
+  </nav>
+</header>
 
-      <!--=============== SNOW JS ===============-->
-      
+<!--==================== MAIN ====================-->
+<main class="main">
+  <section class="home" id="home">
+    <div class="home__container container">
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+      <img src="assets/img/img-bg.svg" alt="bg" class="home__bg">
+
+      <img src="assets/img/cloud-1.svg" alt="cloud" class="home__cloud-1">
+      <img src="assets/img/cloud-2.svg" alt="cloud" class="home__cloud-2">
+
+      <img src="assets/img/sled.svg" alt="sled" class="home__sled">
+
+      <div class="home__images">
+        <img src="assets/img/img-1.svg" class="home__img-1">
+        <img src="assets/img/img-2.svg" class="home__img-2">
+        <img src="assets/img/img-3.svg" class="home__img-3">
+        <img src="assets/img/img-4.svg" class="home__img-4">
+        <img src="assets/img/img-5.svg" class="home__img-5">
+        <img src="assets/img/img-6.svg" class="home__img-6">
+        <img src="assets/img/img-7.svg" class="home__img-7">
+        <img src="assets/img/img-8.svg" class="home__img-8">
+        <img src="assets/img/img-9.svg" class="home__img-9">
+        <img src="assets/img/img-10.svg" class="home__img-10">
+        <img src="assets/img/img-11.svg" class="home__img-11">
+        <img src="assets/img/img-12.svg" class="home__img-12">
+        <img src="assets/img/img-13.svg" class="home__img-13">
+        <img src="assets/img/img-14.svg" class="home__img-14">
+        <img src="assets/img/img-15.svg" class="home__img-15">
+        <img src="assets/img/img-16.svg" class="home__img-16">
+      </div>
+
+      <h1 class="home__title">Merry <br> Christmas</h1>
+    </div>
+  </section>
+</main>
+
+<!--=============== GSAP ===============-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<canvas id="snow-canvas"></canvas>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/snow.js"></script>
+
+</body>
 </html>
